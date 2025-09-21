@@ -1,0 +1,673 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML5 A-Z Tags Reference</title>
+  <style>
+    body { font-family: sans-serif; padding: 1rem; line-height: 1.6; }
+    section { border: 1px solid #ddd; padding: 1rem; margin-bottom: 1rem; border-radius: 6px; }
+    h2 { color: #0b6; }
+    code { background: #eee; padding: 0.2rem 0.4rem; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HTML5 A–Z Tags Reference</h1>
+    <p>প্রতিটি ট্যাগের ছোট উদাহরণ দেখানো হয়েছে।</p>
+  </header>
+
+  <main>
+    <section id="a">
+      <h2>&lt;a&gt; — Anchor</h2>
+      <a href="#">This is a link</a>
+    </section>
+
+    <section id="abbr">
+      <h2>&lt;abbr&gt; — Abbreviation</h2>
+      <p><abbr title="HyperText Markup Language">HTML</abbr></p>
+    </section>
+
+    <section id="address">
+      <h2>&lt;address&gt;</h2>
+      <address>
+        Dhaka, Bangladesh<br>
+        <a href="mailto:test@example.com">test@example.com</a>
+      </address>
+    </section>
+
+    <section id="area">
+      <h2>&lt;area&gt; (image map)</h2>
+      <img src="https://via.placeholder.com/150" usemap="#map1" alt="placeholder">
+      <map name="map1">
+        <area shape="rect" coords="0,0,50,50" href="#" alt="Top-left">
+      </map>
+    </section>
+
+    <section id="article">
+      <h2>&lt;article&gt;</h2>
+      <article>
+        <h3>Article Title</h3>
+        <p>This is an article content.</p>
+      </article>
+    </section>
+
+    <section id="aside">
+      <h2>&lt;aside&gt;</h2>
+      <aside>
+        <p>Sidebar or extra info.</p>
+      </aside>
+    </section>
+
+    <section id="audio">
+      <h2>&lt;audio&gt;</h2>
+      <audio controls>
+        <source src="https://interactive-examples.mdn.mozilla.net/media/examples/t-rex-roar.mp3" type="audio/mpeg">
+      </audio>
+    </section>
+
+    <section id="b">
+      <h2>&lt;b&gt;</h2>
+      <p><b>Bold text</b></p>
+    </section>
+
+    <section id="bdi">
+      <h2>&lt;bdi&gt;</h2>
+      <p><bdi>Bidirectional isolate example</bdi></p>
+    </section>
+
+    <section id="bdo">
+      <h2>&lt;bdo&gt;</h2>
+      <p><bdo dir="rtl">Right-to-left text</bdo></p>
+    </section>
+
+    <section id="blockquote">
+      <h2>&lt;blockquote&gt;</h2>
+      <blockquote cite="https://example.com">
+        This is a blockquote example.
+      </blockquote>
+    </section>
+
+    <section id="body">
+      <h2>&lt;body&gt;</h2>
+      <p>The body element contains the main content.</p>
+    </section>
+
+    <section id="br">
+      <h2>&lt;br&gt;</h2>
+      Line1<br>Line2
+    </section>
+
+    <section id="button">
+      <h2>&lt;button&gt;</h2>
+      <button>Click me</button>
+    </section>
+
+    <section id="canvas">
+      <h2>&lt;canvas&gt;</h2>
+      <canvas id="myCanvas" width="200" height="50" style="border:1px solid #000;"></canvas>
+      <script>
+        const c = document.getElementById('myCanvas');
+        const ctx = c.getContext('2d');
+        ctx.fillStyle = '#0b6';
+        ctx.fillRect(10, 10, 150, 30);
+        ctx.fillStyle = '#fff';
+        ctx.fillText('Canvas Example', 15, 30);
+      </script>
+    </section>
+
+    <section id="caption">
+      <h2>&lt;caption&gt;</h2>
+      <table border="1">
+        <caption>Sample Table Caption</caption>
+        <tr><th>Item</th><th>Qty</th></tr>
+        <tr><td>Apple</td><td>5</td></tr>
+      </table>
+    </section>
+
+    <section id="cite">
+      <h2>&lt;cite&gt;</h2>
+      <p>Source: <cite>MDN Web Docs</cite></p>
+    </section>
+
+    <section id="code">
+      <h2>&lt;code&gt;</h2>
+      <p>Example: <code>console.log('Hello')</code></p>
+    </section>
+
+    <section id="colgroup">
+      <h2>&lt;colgroup&gt;</h2>
+      <table border="1">
+        <colgroup span="2" style="background-color:#eee"></colgroup>
+        <tr><td>A</td><td>B</td></tr>
+      </table>
+    </section>
+
+    <section id="data">
+      <h2>&lt;data&gt;</h2>
+      <p>Value: <data value="42">42</data></p>
+    </section>
+
+    <section id="datalist">
+      <h2>&lt;datalist&gt;</h2>
+      <input list="browsers" name="browser">
+      <datalist id="browsers">
+        <option value="Chrome">
+        <option value="Firefox">
+        <option value="Edge">
+      </datalist>
+    </section>
+
+    <section id="del">
+      <h2>&lt;del&gt;</h2>
+      <p>Old: <del>Old text</del></p>
+    </section>
+
+    <section id="details">
+      <h2>&lt;details&gt;</h2>
+      <details>
+        <summary>More info</summary>
+        <p>Hidden content revealed on click.</p>
+      </details>
+    </section>
+
+    <section id="dialog">
+      <h2>&lt;dialog&gt;</h2>
+      <dialog id="dlg">
+        <p>This is a dialog</p>
+        <button onclick="document.getElementById('dlg').close()">Close</button>
+      </dialog>
+      <button onclick="document.getElementById('dlg').showModal()">Open Dialog</button>
+    </section>
+
+    <section id="div">
+      <h2>&lt;div&gt;</h2>
+      <div>Generic container</div>
+    </section>
+
+    <section id="dl">
+      <h2>&lt;dl&gt;</h2>
+      <dl>
+        <dt>Term</dt>
+        <dd>Definition</dd>
+      </dl>
+    </section>
+
+    <section id="em">
+      <h2>&lt;em&gt;</h2>
+      <p><em>Emphasized text</em></p>
+    </section>
+
+    <section id="embed">
+      <h2>&lt;embed&gt;</h2>
+      <embed src="https://example.com" type="application/pdf" width="200" height="50">
+    </section>
+
+    <section id="fieldset">
+      <h2>&lt;fieldset&gt;</h2>
+      <fieldset>
+        <legend>Group</legend>
+        <label>Name: <input type="text"></label>
+      </fieldset>
+    </section>
+
+    <section id="figcaption">
+      <h2>&lt;figcaption&gt;</h2>
+      <figure>
+        <img src="https://via.placeholder.com/100" alt="placeholder">
+        <figcaption>Figcaption example</figcaption>
+      </figure>
+    </section>
+
+    <section id="figure">
+      <h2>&lt;figure&gt;</h2>
+      <figure>
+        <img src="https://via.placeholder.com/120" alt="figure">
+        <figcaption>Figure example</figcaption>
+      </figure>
+    </section>
+
+    <section id="footer">
+      <h2>&lt;footer&gt;</h2>
+      <footer>
+        <p>Footer section</p>
+      </footer>
+    </section>
+
+    <section id="form">
+      <h2>&lt;form&gt;</h2>
+      <form>
+        <label>Email: <input type="email"></label>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section id="h1">
+      <h2>&lt;h1&gt; – &lt;h6&gt;</h2>
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+      <h5>Heading 5</h5>
+      <h6>Heading 6</h6>
+    </section>
+
+    <section id="head">
+      <h2>&lt;head&gt;</h2>
+      <p>The head element contains meta info, title, scripts, styles, etc.</p>
+    </section>
+
+    <section id="header">
+      <h2>&lt;header&gt;</h2>
+      <header>
+        <p>Header section</p>
+      </header>
+    </section>
+
+    <section id="hr">
+      <h2>&lt;hr&gt;</h2>
+      <hr>
+    </section>
+
+    <section id="html">
+      <h2>&lt;html&gt;</h2>
+      <p>The root HTML element</p>
+    </section>
+
+    <section id="i">
+      <h2>&lt;i&gt;</h2>
+      <p><i>Italic text</i></p>
+    </section>
+
+    <section id="iframe">
+      <h2>&lt;iframe&gt;</h2>
+      <iframe srcdoc="<p>Iframe content</p>" width="200" height="50"></iframe>
+    </section>
+
+    <section id="img">
+      <h2>&lt;img&gt;</h2>
+      <img src="https://via.placeholder.com/150" alt="placeholder">
+    </section>
+
+    <section id="input">
+      <h2>&lt;input&gt;</h2>
+      <input type="text" placeholder="Text input">
+    </section>
+
+    <section id="ins">
+      <h2>&lt;ins&gt;</h2>
+      <p><ins>Inserted text</ins></p>
+    </section>
+
+    <section id="kbd">
+      <h2>&lt;kbd&gt;</h2>
+      <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd></p>
+    </section>
+
+    <section id="label">
+      <h2>&lt;label&gt;</h2>
+      <label>Name: <input type="text"></label>
+    </section>
+
+    <section id="legend">
+      <h2>&lt;legend&gt;</h2>
+      <fieldset>
+        <legend>Legend Example</legend>
+        <input type="text">
+      </fieldset>
+    </section>
+
+    <section id="li">
+      <h2>&lt;li&gt;</h2>
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+      </ul>
+    </section>
+
+    <section id="link">
+      <h2>&lt;link&gt;</h2>
+      <p>Used in &lt;head&gt; to link stylesheets or resources.</p>
+    </section>
+
+    <section id="main">
+      <h2>&lt;main&gt;</h2>
+      <main>Main content area</main>
+    </section>
+
+    <section id="map">
+      <h2>&lt;map&gt;</h2>
+      <p>Used with &lt;area&gt; for image maps (already demonstrated above)</p>
+    </section>
+
+    <section id="mark">
+      <h2>&lt;mark&gt;</h2>
+      <p>This is <mark>highlighted</mark> text.</p>
+    </section>
+
+    <section id="menu">
+      <h2>&lt;menu&gt;</h2>
+      <menu>
+        <li>Menu item</li>
+      </menu>
+    </section>
+
+    <section id="meta">
+      <h2>&lt;meta&gt;</h2>
+      <p>Used in &lt;head&gt; for charset, viewport, description, etc.</p>
+    </section>
+
+    <section id="meter">
+      <h2>&lt;meter&gt;</h2>
+      <meter value="0.6">60%</meter>
+    </section>
+
+    <section id="nav">
+      <h2>&lt;nav&gt;</h2>
+      <nav>
+        <a href="#">Home</a> | <a href="#">About</a>
+      </nav>
+    </section>
+
+    <section id="noscript">
+      <h2>&lt;noscript&gt;</h2>
+      <noscript>Your browser has JavaScript disabled.</noscript>
+    </section>
+
+    <section id="object">
+      <h2>&lt;object&gt;</h2>
+      <object data="https://example.com" width="200" height="50">Fallback</object>
+    </section>
+
+    <section id="ol">
+      <h2>&lt;ol&gt;</h2>
+      <ol>
+        <li>First</li>
+        <li>Second</li>
+      </ol>
+    </section>
+
+    <section id="optgroup">
+      <h2>&lt;optgroup&gt;</h2>
+      <select>
+        <optgroup label="Fruits">
+          <option>Apple</option>
+          <option>Banana</option>
+        </optgroup>
+      </select>
+    </section>
+
+    <section id="option">
+      <h2>&lt;option&gt;</h2>
+      <select>
+        <option>One</option>
+        <option>Two</option>
+      </select>
+    </section>
+
+    <section id="output">
+      <h2>&lt;output&gt;</h2>
+      <output>Result goes here</output>
+    </section>
+
+    <section id="p">
+      <h2>&lt;p&gt;</h2>
+      <p>Paragraph text example.</p>
+    </section>
+
+    <section id="param">
+      <h2>&lt;param&gt;</h2>
+      <object data="movie.mp4" type="video/mp4">
+        <param name="autoplay" value="true">
+      </object>
+    </section>
+
+    <section id="picture">
+      <h2>&lt;picture&gt;</h2>
+      <picture>
+        <source srcset="https://via.placeholder.com/150.webp" type="image/webp">
+        <img src="https://via.placeholder.com/150.png" alt="example">
+      </picture>
+    </section>
+
+    <section id="pre">
+      <h2>&lt;pre&gt;</h2>
+      <pre>
+This is preformatted text.
+Line breaks preserved.
+      </pre>
+    </section>
+
+    <section id="progress">
+      <h2>&lt;progress&gt;</h2>
+      <progress value="70" max="100">70%</progress>
+    </section>
+
+    <section id="q">
+      <h2>&lt;q&gt;</h2>
+      <p>Inline quote: <q>This is a quote</q></p>
+    </section>
+
+    <section id="rp">
+      <h2>&lt;rp&gt;</h2>
+      <ruby>
+        漢 <rp>(</rp><rt>kan</rt><rp>)</rp>
+      </ruby>
+    </section>
+
+    <section id="rt">
+      <h2>&lt;rt&gt;</h2>
+      <ruby>
+        漢 <rt>kan</rt>
+      </ruby>
+    </section>
+
+    <section id="ruby">
+      <h2>&lt;ruby&gt;</h2>
+      <ruby>
+        漢 <rt>kan</rt>
+      </ruby>
+    </section>
+
+    <section id="s">
+      <h2>&lt;s&gt;</h2>
+      <p><s>Strikethrough text</s></p>
+    </section>
+
+    <section id="samp">
+      <h2>&lt;samp&gt;</h2>
+      <p>Sample output: <samp>Sample text</samp></p>
+    </section>
+
+    <section id="script">
+      <h2>&lt;script&gt;</h2>
+      <script>console.log('Script tag example');</script>
+      <p>Check console for output.</p>
+    </section>
+
+    <section id="section">
+      <h2>&lt;section&gt;</h2>
+      <section>
+        <p>Generic section example.</p>
+      </section>
+    </section>
+
+    <section id="select">
+      <h2>&lt;select&gt;</h2>
+      <select>
+        <option>Option 1</option>
+        <option>Option 2</option>
+      </select>
+    </section>
+
+    <section id="small">
+      <h2>&lt;small&gt;</h2>
+      <p>This is <small>small text</small></p>
+    </section>
+
+    <section id="source">
+      <h2>&lt;source&gt;</h2>
+      <video controls>
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+      </video>
+    </section>
+
+    <section id="span">
+      <h2>&lt;span&gt;</h2>
+      <span style="color:#0b6;">Span example</span>
+    </section>
+
+    <section id="strong">
+      <h2>&lt;strong&gt;</h2>
+      <strong>Strong text</strong>
+    </section>
+
+    <section id="style">
+      <h2>&lt;style&gt;</h2>
+      <p>Used in head or body for CSS styling.</p>
+    </section>
+
+    <section id="sub">
+      <h2>&lt;sub&gt;</h2>
+      H<sub>2</sub>O
+    </section>
+
+    <section id="summary">
+      <h2>&lt;summary&gt;</h2>
+      <details>
+        <summary>Summary example</summary>
+        <p>Details revealed</p>
+      </details>
+    </section>
+
+    <section id="sup">
+      <h2>&lt;sup&gt;</h2>
+      E = mc<sup>2</sup>
+    </section>
+
+    <section id="table">
+      <h2>&lt;table&gt;</h2>
+      <table border="1">
+        <tr><th>Name</th><th>Age</th></tr>
+        <tr><td>Araf</td><td>28</td></tr>
+      </table>
+    </section>
+
+    <section id="tbody">
+      <h2>&lt;tbody&gt;</h2>
+      <table border="1">
+        <tbody>
+          <tr><td>Row1</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="td">
+      <h2>&lt;td&gt;</h2>
+      <table border="1">
+        <tr><td>Cell</td></tr>
+      </table>
+    </section>
+
+    <section id="template">
+      <h2>&lt;template&gt;</h2>
+      <template id="tpl">
+        <p>Template content</p>
+      </template>
+      <script>
+        const tpl = document.getElementById('tpl');
+        const clone = tpl.content.cloneNode(true);
+        document.body.appendChild(clone);
+      </script>
+    </section>
+
+    <section id="textarea">
+      <h2>&lt;textarea&gt;</h2>
+      <textarea rows="2">Textarea content</textarea>
+    </section>
+
+    <section id="tfoot">
+      <h2>&lt;tfoot&gt;</h2>
+      <table border="1">
+        <tfoot>
+          <tr><td>Footer</td></tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section id="th">
+      <h2>&lt;th&gt;</h2>
+      <table border="1">
+        <tr><th>Header</th></tr>
+      </table>
+    </section>
+
+    <section id="thead">
+      <h2>&lt;thead&gt;</h2>
+      <table border="1">
+        <thead>
+          <tr><th>Head</th></tr>
+        </thead>
+      </table>
+    </section>
+
+    <section id="time">
+      <h2>&lt;time&gt;</h2>
+      <time datetime="2025-09-21">21 Sep 2025</time>
+    </section>
+
+    <section id="title">
+      <h2>&lt;title&gt;</h2>
+      <p>Page title appears in &lt;head&gt; and browser tab</p>
+    </section>
+
+    <section id="tr">
+      <h2>&lt;tr&gt;</h2>
+      <table border="1">
+        <tr><td>Row</td></tr>
+      </table>
+    </section>
+
+    <section id="track">
+      <h2>&lt;track&gt;</h2>
+      <video controls>
+        <track kind="subtitles" srclang="en" src="">
+      </video>
+    </section>
+
+    <section id="u">
+      <h2>&lt;u&gt;</h2>
+      <p><u>Underlined text</u></p>
+    </section>
+
+    <section id="ul">
+      <h2>&lt;ul&gt;</h2>
+      <ul>
+        <li>Unordered 1</li>
+        <li>Unordered 2</li>
+      </ul>
+    </section>
+
+    <section id="var">
+      <h2>&lt;var&gt;</h2>
+      <p>Variable example: <var>x</var></p>
+    </section>
+
+    <section id="video">
+      <h2>&lt;video&gt;</h2>
+      <video controls width="200">
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+      </video>
+    </section>
+
+    <section id="wbr">
+      <h2>&lt;wbr&gt;</h2>
+      <p>Word break suggestion: long<wbr>word</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 HTML5 A-Z Example</p>
+  </footer>
+</body>
+</html>
